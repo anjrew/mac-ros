@@ -21,6 +21,14 @@
 		"ghcr.io/devcontainers/features/git:1": {},
 		"ghcr.io/devcontainers-contrib/features/black:2": {},
 		"ghcr.io/devcontainers-contrib/features/flake8:2": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"IronGeek.vscode-env",
+				"donjayamanne.python-environment-manager"
+			]
+		}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.

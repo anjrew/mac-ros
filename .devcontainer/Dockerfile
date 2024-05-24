@@ -24,7 +24,11 @@ RUN apt-get -y update && apt-get install -y \
     ros-noetic-rqt-image-view \
     ros-noetic-gmapping \
     ros-noetic-navigation \
-    ros-noetic-interactive-markers
+    ros-noetic-interactive-markers \
+    ros-noetic-tf2-geometry-msgs \
+    ros-noetic-ackermann-msgs \
+    ros-noetic-joy \
+    ros-noetic-map-server
 RUN mkdir -p /root/catkin_ws/src
 WORKDIR /root/catkin_ws
 RUN /bin/bash -c "source /opt/ros/noetic/setup.bash"
