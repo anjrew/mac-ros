@@ -1,0 +1,36 @@
+version: '3'
+services:
+  ros:
+    build: 
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    command: tail -f /dev/null
+    volumes: 
+      # Forwards the local Docker socket to the container.
+      - /var/run/docker.sock:/var/run/docker-host.sock 
+      # Update this to wherever you want VS Code to mount the folder of your project
+      - ../..:/workspaces:cached
+      - /dev/bus/usb:/dev/bus/usb # Forwards the local USB devices to the container.
+      - /dev/input:/dev/input # Forwards the local input devices to the container.
+      - ~/.gitconfig:/root/.gitconfig  # Mount the .gitconfig file
+      - ~/.ssh:/root/.ssh              # Mount the .ssh directory
+    environment:
+      - DISPLAY=novnc:0.0
+    env_file:
+      - ros.env
+    networks:
+      - x11
+    # Make the container privileged
+    privileged: true
+
+  novnc:  
+    image: theasp/novnc:latest
+    env_file:
+      - novnc.env
+    ports:
+      - "8080:8080"
+    networks:
+      - x11
+networks:
+  x11:
+    
