@@ -2,6 +2,7 @@
     "recommendations": [
         "irongeek.vscode-env",
         "donjayamanne.python-environment-manager",
-        "ms-azuretools.vscode-docker"
+        "ms-azuretools.vscode-docker",
+        "ms-iot.vscode-ros"
     ]
 }

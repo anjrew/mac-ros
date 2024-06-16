@@ -28,7 +28,8 @@
 				"IronGeek.vscode-env",
 				"donjayamanne.python-environment-manager",
 				"ms-azuretools.vscode-docker",
-				"GitHub.copilot-chat"
+				"GitHub.copilot-chat",
+				"ms-iot.vscode-ros"
 			]
 		}
 	}

@@ -8,3 +8,11 @@
 5. View the data on the Rviz window after selecting the topics and datapoints for viewing
 
 ![View Scan Data in Rviz](./images/rviz_view_data.png)
+
+## Run with a configuration
+
+You can run RViz with a configuration file by running `rosrun rviz rviz -d /path/to/config.rviz`
+
+```bash
+rosrun rviz rviz -d ./rviz/scan_pose_config.rviz
+```
