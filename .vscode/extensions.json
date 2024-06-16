@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "irongeek.vscode-env",
-        "donjayamanne.python-environment-manager"
+        "donjayamanne.python-environment-manager",
+        "ms-azuretools.vscode-docker"
     ]
 }
