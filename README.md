@@ -31,7 +31,7 @@ Edit the `Dockerfile` line that installs packages and rebuild the container usin
 
 ## Rviz
 
-
+For more info on how to view in Rviz check out the [dedicated docs section](./docs/viewing_scan_data_in_rviz.md)
 
 ## Testing connection to remote robot
 
