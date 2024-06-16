@@ -28,3 +28,12 @@ Edit the `Dockerfile` line that installs packages and rebuild the container usin
 
 - Look for worlds : `ls /usr/share/gazebo-11/worlds/`
 - Run a world: `gazebo worlds/actor.world`
+
+## Rviz
+
+
+
+## Testing connection to remote robot
+
+
+## Webviz
